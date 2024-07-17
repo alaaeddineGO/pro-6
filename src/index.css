@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+.App {
+  margin-top: 20px;
+  height: auto;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+}
+.App h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  font-weight: 200;
+}
+.App h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.App p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.Cards-container {
+  margin: 15px auto;
+  min-height: 565px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 9px;
+}
+.Cards-container .card {
+  max-width: 265px;
+  height: 188px;
+  margin: auto;
+  box-shadow: 13px 10px 13px 2px rgba(0, 0, 0, 0.6901960784);
+}
+.Cards-container .card h2 {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.Cards-container .card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+.Cards-container .card:nth-child(1) {
+  border-top: 2px solid #ea0e0e;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.Cards-container .card:nth-child(2) {
+  border-top: 2px solid #74c6c6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.Cards-container .card:nth-child(3) {
+  border-top: 2px solid #85c7ff;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.Cards-container .card:nth-child(4) {
+  border-top: 2px solid #ffc66c;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media (max-width: 910px) {
+  .App {
+    height: 200vh;
+  }
+}
+@media (max-width: 910px) and (max-width: 447px) {
+  .Cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  .Cards-container .card {
+    max-width: 368px;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

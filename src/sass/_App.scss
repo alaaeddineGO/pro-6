@@ -1,0 +1,20 @@
+@import 'mixin';
+.App{
+    margin-top: 20px;
+    height: auto;
+    background-color: aliceblue;
+    @include fcc;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    h2{
+        @include font(19px,200);
+    }
+    h1{
+        @include font(24px,600);
+    }
+    p{
+        @include font(16px,300);
+        margin-bottom: 10px;
+    }
+}
